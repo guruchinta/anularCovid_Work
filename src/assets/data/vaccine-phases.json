@@ -1,0 +1,27 @@
+[
+  {
+    "phase": "1",
+    "count": 38,
+    "title": "Vaccines testing safety and dosage"
+  },
+  {
+    "phase": "2",
+    "count": 17,
+    "title": "Vaccines in expanded safety trials"
+  },
+  {
+    "phase": "3",
+    "count": 12,
+    "title": "Vaccines in large-scale efficacy tests"
+  },
+  {
+    "phase": "LIMITED",
+    "count": 6,
+    "title": "Vaccines approved for early or limited use"
+  },
+  {
+    "phase": "APPROVED",
+    "count": 0,
+    "title": "Vaccines approved for full use"
+  }
+]

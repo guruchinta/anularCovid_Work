@@ -1,0 +1,30 @@
+<div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email Address</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Roles</th>
+        <th scope="col">City</th>
+        <th scope="col">State</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users; index as i">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>
+          {{ user.lastName + ', ' + user.firstName }}
+        </td>
+        <td>{{ user.emailAddress }}</td>
+        <td>{{ user.gender }}</td>
+        <td>{{ user.roles | join }}</td>
+        <td>{{ user.city }}</td>
+        <td>{{ user.state }}</td>
+        <td><a routerLink="/admin/users/{{user?.id}}">Edit</a>&nbsp;&nbsp;<a [routerLink]="" (click)="onDeleteClick(user?.id, i)">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

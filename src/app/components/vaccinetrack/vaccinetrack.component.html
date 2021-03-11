@@ -1,0 +1,61 @@
+<div class="hc-container">
+  <table class="table table-striped table-bordered border border-blue">
+    <caption>Update on Overall Vaccines and Phases </caption>
+    <thead>
+      <tr>
+        <th>Phase </th>
+        <th>Count</th>
+        <th>Status Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Phase {{ vaccinePhase[0].phase }}</td>
+        <td> {{ vaccinePhase[0].count }}</td>
+        <td> {{ vaccinePhase[0].title }}</td>
+      </tr>
+      <tr>
+        <td>Phase {{ vaccinePhase[1].phase }}</td>
+        <td> {{ vaccinePhase[1].count }}</td>
+        <td> {{ vaccinePhase[1].title }}</td>
+      </tr>
+      <tr>
+        <td>Phase {{ vaccinePhase[2].phase }}</td>
+        <td> {{ vaccinePhase[2].count }}</td>
+        <td> {{ vaccinePhase[2].title }}</td>
+      </tr>
+      <tr>
+        <td>Phase {{ vaccinePhase[3].phase }}</td>
+        <td> {{ vaccinePhase[3].count }}</td>
+        <td> {{ vaccinePhase[3].title }}</td>
+      </tr>
+      <tr>
+        <td>Phase {{ vaccinePhase[4].phase }}</td>
+        <td> {{ vaccinePhase[4].count }}</td>
+        <td> {{ vaccinePhase[4].title }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-striped table-bordered border border-blue">
+    <caption>Vaccine Info</caption>
+    <thead>
+      <tr>
+        <th>Candidate</th>
+        <th>Mechanism</th>
+        <th>Sponsor</th>
+        <th>TrailPhase</th>
+        <th>institution</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of vaccineInfo">
+        <td>{{item.candidate}}</td>
+        <td>{{item.mechanism}}</td>
+        <td>{{item.sponsor}}</td>
+        <td>{{item.trailPhase}}</td>
+        <td>{{item.institution}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

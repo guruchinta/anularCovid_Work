@@ -1,0 +1,8 @@
+
+.hc-container {
+  padding: 0;
+
+  ::ng-deep .hc-container {
+    padding: 0;
+  }
+}

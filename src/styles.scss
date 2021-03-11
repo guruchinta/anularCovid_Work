@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+.hc-container {
+  // border: 1px solid red;
+  padding: 1rem;
+  padding-top: 0;
+
+  >.row {
+    margin: 0;
+  }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

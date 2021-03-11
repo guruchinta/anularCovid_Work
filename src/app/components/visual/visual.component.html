@@ -1,0 +1,19 @@
+<div class="hc-container">
+  <div class="filters align-right">
+    <select [(ngModel)]="selectedState">
+      <option value="all">All</option>
+      <option *ngFor="let name of states" [value]="name">{{ name }}</option>
+    </select>
+  </div>
+  <div class="page row">
+    <div class="col-sm-6">
+      <app-overall-summary [state]="selectedState"></app-overall-summary>
+    </div>
+    <div class="col-sm-6">
+      <app-covid-summary [state]="selectedState"></app-covid-summary>
+    </div>
+    <div class="col-sm-12">
+      <app-tests-death-summary [state]="selectedState"></app-tests-death-summary>
+    </div>
+  </div>
+</div>

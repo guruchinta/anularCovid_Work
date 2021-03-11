@@ -1,0 +1,22 @@
+<div>
+  <ul class="list-group">
+    <li *ngFor="let query of queries; index as i" class="list-group-item border border-primary">
+      <div class="title">
+        <span class="text" [innerText]="query.question"></span>
+        <div class="actions align-right" *ngIf="isAdmin">
+          <a routerLink="/admin/queries/{{query?.id}}">
+            <span *ngIf="!query?.answer">Answer</span>
+            <span *ngIf="query?.answer" class="answered">Answered</span>
+          </a>
+        </div>
+      </div>
+      <div class="subtitle" *ngIf="!isAdmin">
+        Requested on {{query.createdOn | date:'dd-MMM-YYYY hh:mm:ss'}} by you.
+      </div>
+      <div class="subtitle" *ngIf="isAdmin">
+        Requested on {{query.createdOn | date:'dd-MMM-YYYY hh:mm:ss'}} by {{query.userName}}
+      </div>
+      <div class="mt-3 answer" *ngIf="query?.answer" [innerText]="query?.answer"></div>
+    </li>
+  </ul>
+</div>

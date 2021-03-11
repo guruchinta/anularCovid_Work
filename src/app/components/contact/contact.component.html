@@ -1,0 +1,35 @@
+<div class="hc-container">
+  <div class="border border-primary mb-3 p-3">
+    <h2>Contact Us</h2>
+    <form #form="ngForm" (ngSubmit)="contactSubmit(form.value)">
+      <div class="form-group">
+        <label for="userName" *ngIf="!queryId">Your Name</label>
+        <label for="userName" *ngIf="queryId">Requestor Name</label>
+        <input type="text" class="form-control" id="userName" aria-describedby="emailHelp" [(ngModel)]="userName" name="userName"
+          required [readonly]="queryId">
+      </div>
+
+      <div class="form-group">
+        <label for="qtype">Query Type: </label>
+        <select class="form-control" id="sel1" name="type" [(ngModel)]="type" required>
+          <option *ngFor="let item of contactType">{{ item }}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="question" *ngIf="queryId">Query</label>
+        <label for="question" *ngIf="!queryId">Ask your Doubt</label>
+        <textarea class="form-control" style="min-width: 8cm ; min-height: 4cm;" [(ngModel)]="question" name="question"
+          required [readonly]="queryId"></textarea>
+      </div>
+
+      <div class="form-group" *ngIf="queryId">
+        <label for="question">Answer</label>
+        <textarea class="form-control" style="min-width: 8cm ; min-height: 4cm;" [(ngModel)]="answer" name="answer"
+          required></textarea>
+      </div>
+      <button *ngIf="queryId" class="btn btn-secondary" (click)="onCancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Submit</button>
+    </form>
+  </div>
+</div>

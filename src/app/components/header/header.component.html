@@ -1,0 +1,24 @@
+<div class="hc-container header">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+      <li class="breadcrumb-item"><a routerLink="/healthtips">Health Tips</a></li>
+      <li class="breadcrumb-item" *ngIf="isLoggedIn"><a routerLink="/vaccine">Vaccine Tracker</a></li>
+      <li class="breadcrumb-item" *ngIf="isLoggedIn"><a routerLink="/visual">Visualization</a></li>
+      <li class="breadcrumb-item"><a routerLink="/contact">Contact-Us</a></li>
+      <li class="breadcrumb-item" *ngIf="!isLoggedIn"><a routerLink="/signup">Sign Up</a></li>
+      <li class="breadcrumb-item" *ngIf="isLoggedIn && isAdmin"><a routerLink="/signup">Add New User</a></li>
+      <li class="breadcrumb-item"><a routerLink="/faq">FAQ</a></li>
+      <li class="breadcrumb-item" *ngIf="isLoggedIn && isAdmin"><a routerLink="/admin">Admin</a></li>
+      <li class="breadcrumb-item" *ngIf="isLoggedIn"><a routerLink="/profile">Profile</a></li>
+      <li *ngIf="isLoggedIn" class="align-right">
+        Welcome <span id="user-name" [innerText]="userProfile?.lastName + ', ' + userProfile?.firstName"></span>
+        <span class="separator">|</span>
+        <a [routerLink]="" (click)="onLogoutClick()">Logout</a>
+      </li>
+      <li *ngIf="!isLoggedIn" class="align-right">
+        <a routerLink="/login">Login</a>
+      </li>
+    </ol>
+  </nav>
+</div>

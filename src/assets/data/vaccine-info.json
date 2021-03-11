@@ -1,0 +1,50 @@
+[
+  {
+    "candidate": "BNT162",
+    "mechanism": "mRNA-based vaccine",
+    "sponsor": "Pfizer, BioNTech",
+    "trailPhase": "3",
+    "institution": "Multiple study sites in Europe and North America",
+    "updateNotes": "Pfizer and BioNTech have received FDA Fast Track designation for BNT162b1 and BNT162b2. BNT162b2 was selected to advance to a Phase 2/3 safety study \"based on the totality of available data from our preclinical and clinical studies, including select immune response and tolerability parameters.\" The companies have asked the FDA to consider an expanded protocol for the Phase 3 trial to include up to 44,000 participants. EMA has initiated a rolling review of BNT162b2, which could accelerate approval of the candidate. Pfizer and BioNTech could be ready to file for an EUA in November and have the vaccine ready for use in December, according to the Wall Street Journal. In Australia, BNT162b2 received provisional determination from Australia’s Therapeutic Goods Administration (TGA), which is the first step on the road for approval for the vaccine in the country. BioNTechs partner in China, Shanghai Fosun Pharmaceutical Group, announced it is seeking approval for BNT162b2 in China but would no longer be pursuing clinical trials for BNT162b1"
+  },
+  {
+    "candidate": "Ad5-nCoV",
+    "mechanism": "Recombinant vaccine (adenovirus type 5 vector)",
+    "sponsor": "CanSino Biologics",
+    "trailPhase": "3",
+    "institution": "Tongji Hospital; Wuhan, China",
+    "updateNotes": "A single dose of Ad5-nCoV protected against upper respiratory infection of SARS-CoV-2 in ferrets, according to a paper published 14 August in Nature Communications. Results from a Phase 1 trial show a humoral and immunogenic response to the vaccine, according to a paper published in The Lancet. Adverse reactions such as pain (54%), fever (46%), fatigue (44%), headache (39%), and muscle pain (17%) occurred in 83% of patients in the low and medium dose groups and 75% of patients in the high dose group. In the Phase 2 trial, neutralizing antibodies and specific interferon γ enzyme-linked immunospot assay responses were observed at all dose levels for most participants."
+  },
+  {
+    "candidate": "Sputnik V",
+    "mechanism": "Non-replicating viral vector",
+    "sponsor": "Gamaleya Research Institute, Acellena Contract Drug Research and Development",
+    "trailPhase": "3",
+    "institution": "Various",
+    "updateNotes": "The institute has made a preliminary presubmission of the vaccine in Brazil, which is required for its use in the country. "
+  },
+  {
+    "candidate": "Bacillus Calmette-Guerin (BCG) vaccine",
+    "mechanism": "Live-attenuated vaccine",
+    "sponsor": "University of Melbourne and Murdoch Children’s Research Institute;",
+    "trailPhase": "2 and 3",
+    "institution": "University of Melbourne and Murdoch Children’s Research Institute;",
+    "updateNotes": " A paper published in Science Advances found countries that required BCG vaccination until the year 2000 had significantly slower growth rates of COVID-19 compared with countries that did not mandate the vaccine. However, a birth cohort study published in Clinical Infectious Diseases found the BCG tuberculosis vaccine did not have a protective effect against COVID-19 in more than 1 million individuals born in Sweden who received the vaccine. A letter published in the journal PNAS where researchers analyzed mortality rates in countries with higher rates of BCG vaccination such as Bolivia, Panama, Columbia, Peru, Brazil, Mexico, South Africa, and Germany found that the negative association between the BCG vaccination and COVID-19 related deaths appears to be diminishing. "
+  },
+  {
+    "candidate": "AdimrSC-2f",
+    "mechanism": "Protein subunit vaccine",
+    "sponsor": "Adimmune",
+    "trailPhase": "1",
+    "institution": "Adimmune",
+    "updateNotes": "Taiwanese company Adimmune is developing a COVID-19 vaccine candidate, AdimrSC-2f, that targets the SARS-CoV-2 spike protein. The candidate has seen positive results in animal testing, and the company is currently planning a randomized, Phase 1 study to evaluate the candidate in 70 healthy participants (NCT04522089) after receiving conditional approval in Taiwan."
+  },
+  {
+    "candidate": "GRAd-COV2",
+    "mechanism": "Adenovirus-based vaccine",
+    "sponsor": "ReiThera; Leukocare; Univercells",
+    "trailPhase": "1",
+    "institution": "Lazzaro Spallanzani National Institute for Infectious Diseases",
+    "updateNotes": "Biotechnology companies ReiThera (Italy), Leukocare (Germany) and Univer cells (Belgium) are partnering to develop an adenovirus-based COVID-19 vaccine. Pre-clinical results in mice and macaques indicate the vaccine generates an immune and Th1-dominated cellular response."
+  }
+]

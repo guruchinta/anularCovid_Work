@@ -1,0 +1,8 @@
+.hc-container {
+  >div {
+    border-radius: .25rem;
+  }
+}
+.btn:not(:first-child) {
+  margin-right: 1rem;
+}
